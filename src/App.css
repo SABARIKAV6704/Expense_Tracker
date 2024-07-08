@@ -1,0 +1,151 @@
+/* src/App.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c1b19197;
+  color: #b7b48bcd;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  background-color: #c9cace;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chart-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.transactions-section {
+  flex: 2;
+  min-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+h1 span {
+  font-size: 1rem;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: calc(100% - 12px);
+  max-width: 350px;
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #30313d;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="datetime-local"] {
+  color: #777;
+}
+
+/* Add space between the first and second input fields */
+form input:first-of-type {
+  margin-bottom: 20px;
+}
+
+form button {
+  width: auto; /* Adjust width to fit content */
+  min-width: 120px; /* Ensure button is not too small */
+  max-width: 300px; /* Set a maximum width */
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #44c767;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 10px auto; /* Center the button */
+}
+
+form button:hover {
+  background-color: #3e9a5b;
+}
+
+div.form-buttons {
+  margin-top: 10px;
+}
+
+div.transactions {
+  margin-top: 20px;
+}
+
+div.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #30313d;
+  background-color: #2c2f36;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+div.transaction:first-child {
+  border-top: 0;
+}
+
+div.transaction div.left {
+  flex: 1;
+}
+
+div.transaction div.name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+div.transaction div.description {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+div.transaction div.right {
+  text-align: right;
+  flex: 1;
+}
+
+div.price.green {
+  color: #1c1;
+  font-weight: bold;
+}
+
+div.price.red {
+  color: #c11;
+  font-weight: bold;
+}
+
+div.transaction div.datetime {
+  font-size: 0.8rem;
+  color: #888;
+}
